@@ -23,6 +23,20 @@ namespace SimpleCalculator
             {
                 Console.WriteLine("Hello Guest!");
             }
+
+            switch (input)
+            {
+                case "Avetis":
+                    Console.WriteLine("Hello Admin!");
+                    break;
+                case "Joe":
+                    Console.WriteLine("Hello Moderator!");
+                    break;                 
+            
+                default:
+                    Console.WriteLine("Hello Guest");
+                    break;
+            }
         }
     }
 }

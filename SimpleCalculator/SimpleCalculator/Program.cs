@@ -11,11 +11,14 @@ namespace SimpleCalculator
         static void Main(string[] args)
         {
             InputConverter inputConverter = new InputConverter();//this class converts the users input
-            CalculatorEngine calculatorEngine = new calculatorEngine();//this class handles the calculation
+            CalculatorEngine calculatorEngine = new CalculatorEngine();//this class handles the calculation
 
-            double firstNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine);
-            double SecondNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine);
+            double firstNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
+            double secondNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
             string operation = Console.ReadLine();
+
+            double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
+            Console.WriteLine(result);
         }
     }
 }

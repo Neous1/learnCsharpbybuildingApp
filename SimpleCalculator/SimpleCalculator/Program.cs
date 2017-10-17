@@ -11,6 +11,7 @@ namespace SimpleCalculator
         static void Main(string[] args)
         {
             InputConverter inputConverter = new InputConverter();
+            CalculatorEngine calculatorEngine = new calculatorEngine();
         }
     }
 }

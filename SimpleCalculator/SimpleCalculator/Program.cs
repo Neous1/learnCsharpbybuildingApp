@@ -10,33 +10,8 @@ namespace SimpleCalculator
     {
         static void Main(string[] args)
         {
-            string input = Console.ReadLine();
-            if (input.Equals("Avetis"))
-            {
-                Console.WriteLine("Hello Admin!");
-            }
-            else if (input.Equals("Joe"))
-            {
-                Console.WriteLine("Hello Moderator!");
-            }
-            else 
-            {
-                Console.WriteLine("Hello Guest!");
-            }
-
-            switch (input)
-            {
-                case "Avetis":
-                    Console.WriteLine("Hello Admin!");
-                    break;
-                case "Joe":
-                    Console.WriteLine("Hello Moderator!");
-                    break;                 
-            
-                default:
-                    Console.WriteLine("Hello Guest");
-                    break;
-            }
+            InputConverter inputConverter = new InputConverter();
         }
     }
 }
+ 
